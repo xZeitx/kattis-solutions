@@ -1,0 +1,27 @@
+using System;
+
+namespace twostones
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = Convert.ToInt32(Console.ReadLine());
+
+            if (i >= 1 && i <= 10000000) 
+            {
+                i = i % 2;
+
+                if (i == 0)
+                {
+                    Console.WriteLine("Bob");
+
+                }
+                else
+                {
+                    Console.WriteLine("Alice");
+                }
+            }
+        }
+    }
+}
